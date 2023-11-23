@@ -1,0 +1,11 @@
+en:
+  menu:
+    publications: Publications
+    cv: CV
+    blog: Blog
+
+zh-CN:
+  menu:
+    publications: 发表论文
+    cv: 简历
+    blog: 博客
