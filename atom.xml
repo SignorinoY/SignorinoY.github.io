@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Gong Ziyang</title>
+  <icon>https://gongziyang.com/icon.png</icon>
+  
+  <link href="https://gongziyang.com/atom.xml" rel="self"/>
+  
+  <link href="https://gongziyang.com/"/>
+  <updated>2024-05-31T04:52:49.613Z</updated>
+  <id>https://gongziyang.com/</id>
+  
+  <author>
+    <name>Gong Ziyang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Review of Distributed Learning on Non/Semi-parametric Estimation</title>
+    <link href="https://gongziyang.com/post/distributed-learning-non-semi-parametric-estimation/"/>
+    <id>https://gongziyang.com/post/distributed-learning-non-semi-parametric-estimation/</id>
+    <published>2024-05-31T01:38:09.000Z</published>
+    <updated>2024-05-31T04:52:49.613Z</updated>
+    
+    <content type="html"><![CDATA[<p>This article provides a comprehensive review of distributed learningmethods for nonparametric and semiparametric estimation.</p><span id="more"></span><h1 id="divide-and-conquer-or-one-shot-methods">Divide-and-Conquer (orOne-Shot) Methods</h1><ul><li><span class="citation" data-cites="zhang2015divide">Zhang et al. (<ahref="#ref-zhang2015divide" role="doc-biblioref">2015</a>)</span>, <spanclass="citation" data-cites="lin2017distributed">Lin et al. (<ahref="#ref-lin2017distributed" role="doc-biblioref">2017</a>)</span>propose a method for nonparametric estimation by averaging local kernelridge regression estimators.</li><li><span class="citation" data-cites="zhao2016partially">Zhao et al.(<a href="#ref-zhao2016partially"role="doc-biblioref">2016</a>)</span></li><li><span class="citation" data-cites="lian2019projected">Lian et al.(<a href="#ref-lian2019projected" role="doc-biblioref">2019</a>)</span>(B-spline), <span class="citation" data-cites="lv2022debiased">Lv &amp;Lian (<a href="#ref-lv2022debiased"role="doc-biblioref">2022</a>)</span> (RKHS)</li><li><span class="citation" data-cites="chen2022distributed">Chen et al.(<a href="#ref-chen2022distributed"role="doc-biblioref">2022</a>)</span> investigate the use of thekernel-based Smoothed Maximum Score Estimator (SMSE) for solvingsemi-parametric binary response models.</li></ul><h1 id="communication-efficient-methods">Communication-EfficientMethods</h1><h1 class="unnumbered" id="bibliography">References</h1><div id="refs" class="references csl-bib-body hanging-indent"data-entry-spacing="0" data-line-spacing="2" role="list"><div id="ref-chen2022distributed" class="csl-entry" role="listitem">Chen, X., Jing, W., Liu, W., &amp; Zhang, Y. (2022). <em>Distributedestimation and inference for semi-parametric binary response models</em>(arXiv:2210.08393). arXiv. <ahref="https://arxiv.org/abs/2210.08393">https://arxiv.org/abs/2210.08393</a></div><div id="ref-lian2019projected" class="csl-entry" role="listitem">Lian, H., Zhao, K., &amp; Lv, S. (2019). Projected spline estimation ofthe nonparametric function in high-dimensional partially linear modelsfor massive data. <em>Annals of Statistics</em>, <em>47</em>(5),2922–2949. <ahref="https://doi.org/10.1214/18-AOS1769">https://doi.org/10.1214/18-AOS1769</a></div><div id="ref-lin2017distributed" class="csl-entry" role="listitem">Lin, S.-B., Guo, X., &amp; Zhou, D.-X. (2017). Distributed learning withregularized least squares. <em>Journal of Machine LearningResearch</em>, <em>18</em>(92), 1–31.</div><div id="ref-lv2022debiased" class="csl-entry" role="listitem">Lv, S., &amp; Lian, H. (2022). Debiased distributed learning for sparsepartial linear models in high dimensions. <em>Journal of MachineLearning Research</em>, <em>23</em>(2), 1–32.</div><div id="ref-zhang2015divide" class="csl-entry" role="listitem">Zhang, Y., Duchi, J., &amp; Wainwright, M. (2015). Divide and conquerkernel ridge regression: A distributed algorithm with minimax optimalrates. <em>Journal of Machine Learning Research</em>, <em>16</em>(1),3299–3340.</div><div id="ref-zhao2016partially" class="csl-entry" role="listitem">Zhao, T., Cheng, G., &amp; Liu, H. (2016). A partially linear frameworkfor massive heterogeneous data. <em>Annals of Statistics</em>,<em>44</em>(4). <ahref="https://doi.org/10.1214/15-AOS1410">https://doi.org/10.1214/15-AOS1410</a></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;This article provides a comprehensive review of distributed learning
+methods for nonparametric and semiparametric estimation.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Discussion of &quot;KAN kolmogorov-arnold-networks&quot;</title>
+    <link href="https://gongziyang.com/post/kolmogorov-arnold-networks/"/>
+    <id>https://gongziyang.com/post/kolmogorov-arnold-networks/</id>
+    <published>2024-05-21T11:00:00.000Z</published>
+    <updated>2024-05-22T04:38:42.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is a discussion of the paper "KAN: kolmogorov-arnold-networks".<span id="more"></span></p><h2 id="preliminaries">Preliminaries</h2><h3 id="b-splines">B-splines</h3><h4 id="definition">Definition</h4><p>Suppose we have <span class="math inline">\(m\)</span> <spanclass="math inline">\((m \geqslant 0)\)</span> distinct internal knots,<span class="math inline">\(\xi_1, \ldots, \xi_m\)</span>, placed withinthe boundary knots <span class="math inline">\(a\)</span> and <spanclass="math inline">\(b\)</span>, satisfying <spanclass="math inline">\(a&lt;\xi_1&lt;\cdots&lt;\xi_m&lt;b\)</span>. Wecan define <span class="math inline">\(t_1=\cdots=t_d=a\)</span>, <spanclass="math inline">\(t_{d+j}=\xi_j\)</span> for <spanclass="math inline">\(j \in\{1, \ldots, m\}\)</span>, and <spanclass="math inline">\(b=t_{d+m+1}=\cdots=t_{d+p}\)</span>, where <spanclass="math inline">\(k\)</span> and <spanclass="math inline">\(d=k+1\)</span> represent the polynomial degree andthe order of a basis function, respectively, and <spanclass="math inline">\(p=d+m\)</span> represents the degrees of freedomof a basis function. Given internal knots, <spanclass="math inline">\(\xi_1, \ldots, \xi_m\)</span>, and boundary knots,<span class="math inline">\(L\)</span> and <spanclass="math inline">\(U\)</span>, we denote the simple knot sequenceintended for splines of degree <span class="math inline">\(k\)</span> by<span class="math inline">\(\mathbf{T}_k\)</span>. Splines of degree<span class="math inline">\(k \in\{1,2, \ldots\}\)</span></p><p>For a given <span class="math inline">\(k \in\)</span> <spanclass="math inline">\(\{1,2, \ldots\}\)</span>, the <spanclass="math inline">\(i\)</span> th B-spline basis of degree <spanclass="math inline">\(k\)</span> (or order <spanclass="math inline">\(d=k+1\)</span> ) denoted by <spanclass="math inline">\(B_{i,k}(x)\)</span> based on the simple knotsequence <span class="math inline">\(\mathbf{T}_k\)</span> can bedefined by the following Cox-de Boor recursive formula: <spanclass="math display">\[B_{i,k}\left(x \mid\mathbf{T}_k\right)=\left(\frac{x-t_i}{t_{i+k}-t_i}\right) B_{i,k-1}\left(x \mid\mathbf{T}_k\right)+\left(\frac{t_{i+k+1}-x}{t_{i+k+1}-t_{i+1}}\right)B_{i+1, k-1}\left(x \mid \mathbf{T}_k\right),\]</span> with <span class="math display">\[B_{l, 0}\left(x \mid \mathbf{T}_k\right)=\left\{\begin{array}{ll}1, &amp; t_l \leq x&lt;t_{l+1} \\0, &amp; \text { otherwise }\end{array}, l \in\{1, \ldots, d+p-1\}\right.,\]</span> where <span class="math inline">\(L \leq x&lt;U,p=m+d\)</span> represents the degrees of freedom, and <spanclass="math inline">\(i \in\{1, \ldots, p\}\)</span>.</p><figure><img src="/images/kolmogorov-arnold-networks/b-splines.png"alt="Cubic B-splines Basis with internal knots (0.3,0.5,0.6)" /><figcaption aria-hidden="true">Cubic B-splines Basis with internal knots<span class="math inline">\((0.3,0.5,0.6)\)</span></figcaption></figure><h4 id="properties">Properties</h4><p>Beginning with a partition of <spanclass="math inline">\([a,b]\)</span>, let <spanclass="math inline">\(a=t_0\)</span>, where <spanclass="math inline">\(K_n\)</span> is <spanclass="math inline">\(O\left(n^\nu\right)\)</span>, and <spanclass="math inline">\(\max _{1 \leq j \leqK_n+1}\left|t_j-t_{j-1}\right|=O\left(n^{-\nu}\right)\)</span> to ensureconvergence. Then define <spanclass="math inline">\(\mathbf{T}_{K_n}\)</span> as the set of partitionpoints, and <span class="math inline">\(S_n^p([a,b])=S_n\left(\mathbf{T}_{K_n}, K_n, p\right)\)</span> as the space ofpolynomial spline basis of order <span class="math inline">\(p\)</span>as defined in Schumaker (2007). There exist B-spline basis functions<span class="math inline">\(\left\{B_j, 1 \leq j \leqq_n\right\}\)</span>, where <spanclass="math inline">\(q_n=K_n+p\)</span>, such that for any <spanclass="math inline">\(f_{0n} \in S_n^p([a, b])\)</span>, it can beexpressed as <span class="math inline">\(f_{0n}(t)=\sum_{j=1}^{q_n}\alpha_j B_j(t)\)</span>, where <spanclass="math inline">\(\boldsymbol{\alpha}=\left(\alpha_1, \ldots,\alpha_{q_n}\right)^{\top}\)</span> represents the correspondingcoefficients of the spline.</p><p>Let <span class="math inline">\(S^p([a, b])\)</span> be thecollection of bounded functions <span class="math inline">\(f\)</span>on <span class="math inline">\([a, b]\)</span> with bounded derivatives<span class="math inline">\(f^{(j)}, j=1, \ldots, k\)</span>, where the<span class="math inline">\(k\)</span>-th derivative <spanclass="math inline">\(f^{(k)}\)</span> satisfies the <spanclass="math inline">\(m\)</span>-Hölder continuity condition: <spanclass="math display">\[\left|f^{(k)}(s)-f^{(k)}(t)\right| \leq L|s-t|^m \quad \forall s, t\in[a, b],\]</span> where <span class="math inline">\(k\)</span> is a positiveinteger and <span class="math inline">\(m \in(0,1]\)</span> with <spanclass="math inline">\(p=m+k\)</span>, and <spanclass="math inline">\(L&lt;\infty\)</span> is a constant.</p><p>For <span class="math inline">\(f_0 \in S^p([a, b])\)</span>, theirexists a function <span class="math inline">\(f_{0n} \in S_n^p([a,b])\)</span> such that <span class="math display">\[\left\|f_0-f_{0 n}\right\|_{\infty}=O\left(n^{-p \nu}\right).\]</span></p><h2 id="understanding">Understanding</h2><h3 id="expanding-the-input-dimension">Expanding the inputdimension</h3><h3 id="activate-multiple-times">Activate multiple times</h3><h3 id="activate-then-multiply">Activate then Multiply</h3><h2 id="future-work">Future Work</h2>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;This is a discussion of the paper &quot;KAN: kolmogorov-arnold-networks&quot;.</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cox Proportional Hazards Model</title>
+    <link href="https://gongziyang.com/post/cox-proportional-hazards-model/"/>
+    <id>https://gongziyang.com/post/cox-proportional-hazards-model/</id>
+    <published>2024-01-02T13:34:32.000Z</published>
+    <updated>2024-01-23T08:03:12.957Z</updated>
+    
+    <content type="html"><![CDATA[<p>The Cox proportional hazards model is a semi-parametric modelcommonly used in survival analysis. It is a regression model that aimsto model the hazard function of survival time <spanclass="math inline">\(T\)</span>, which represents the probability of anevent occurring at time <span class="math inline">\(t\)</span> giventhat the event has not occurred before time <spanclass="math inline">\(t\)</span>, that is, <span class="math display">\[\lambda(t)=\lim_{\Delta t\rightarrow 0}\frac{P(t\leq T&lt;t+\Deltat|T\geq t)}{\Delta t}.\]</span></p><span id="more"></span><h2 id="assumptions">Assumptions</h2><p>The Cox proportional hazards model assumes that the hazard functionfollows the form: <span class="math display">\[\lambda(t|X) = \lambda_0(t) \exp(X^T\beta),\]</span> where, <span class="math inline">\(\lambda_0(t)\)</span>represents the baseline hazard function, and <spanclass="math inline">\(\beta\)</span> is the vector of regressioncoefficients.</p><h2 id="estimation">Estimation</h2><p>The estimation of the Cox proportional hazards model is based on thepartial likelihood function. The partial likelihood function is definedas: <span class="math display">\[L(\beta) = \prod_{i=1}^{n}\left[\frac{\exp(X_i^T\beta)}{\sum_{j\inR(t_i)} \exp(X_j^T\beta)}\right]^{\delta_i},\]</span> where, <span class="math inline">\(R(t_i)\)</span> representsthe set of individuals at risk at time <spanclass="math inline">\(t_i\)</span>, and <spanclass="math inline">\(\delta_i\)</span> is an indicator variable thattakes the value 1 if the event occurs for individual <spanclass="math inline">\(i\)</span> and 0 otherwise.</p><p>The corresponding log partial likelihood function of <spanclass="math inline">\(\beta\)</span> is given by: <spanclass="math display">\[\ell(\beta)=\sum_{i=1}^{n}\delta_i\left[X_i^T\beta-\log\left(\sum_{j\inR(t_i)}\exp(X_j^T\beta)\right)\right]\]</span> and the cumulative baseline hazard function <spanclass="math inline">\(\Lambda_0(t)\)</span> is given by: <spanclass="math display">\[\Lambda_0(t)=\frac{\sum_{i=1}^{n}\exp(X_i^T\beta)I(t_i\leqt)}{\sum_{i=1}^{n} I(t_i\leq t)},\]</span> where, <span class="math inline">\(I(t_i\leq t)\)</span> is anindicator variable that takes the value 1 if <spanclass="math inline">\(t_i\leq t\)</span> and 0 otherwise.</p><details class="note default no-icon"><summary><p>Proof</p></summary><p>The likelihood function is defined as: <span class="math display">\[L(\beta)=\prod_{i=1}^{n}\lambda(t_i|X_i)^{\delta_i}S(t_i|X_i),\]</span> where <span class="math inline">\(S(t_i|X_i)\)</span>represents the survival function.</p><p>Assuming the baseline hazard function is a piecewise constantfunction, i.e., <spanclass="math inline">\(\lambda_0(t)=\lambda_k\)</span> for <spanclass="math inline">\(t\in[t_k,t_{k+1})\)</span>, the likelihoodfunction can be written as: <span class="math display">\[L(\beta)=\prod_{i=1}^{n}\lambda_0(t_i)\exp(X_i^T\beta)^{\delta_i}\exp\left(-\int_0^{t_i}\lambda_0(u)\exp(X_i^T\beta)\,\mathrm{d}u\right)\]</span></p></details>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;The Cox proportional hazards model is a semi-parametric model
+commonly used in survival analysis. It is a regression model that aims
+to model the hazard function of survival time &lt;span
+class=&quot;math inline&quot;&gt;&#92;(T&#92;)&lt;/span&gt;, which represents the probability of an
+event occurring at time &lt;span class=&quot;math inline&quot;&gt;&#92;(t&#92;)&lt;/span&gt; given
+that the event has not occurred before time &lt;span
+class=&quot;math inline&quot;&gt;&#92;(t&#92;)&lt;/span&gt;, that is, &lt;span class=&quot;math display&quot;&gt;&#92;[
+&#92;lambda(t)=&#92;lim_{&#92;Delta t&#92;rightarrow 0}&#92;frac{P(t&#92;leq T&amp;lt;t+&#92;Delta
+t|T&#92;geq t)}{&#92;Delta t}.
+&#92;]&lt;/span&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Survival Analysis" scheme="https://gongziyang.com/tags/Survival-Analysis/"/>
+    
+  </entry>
+  
+</feed>
