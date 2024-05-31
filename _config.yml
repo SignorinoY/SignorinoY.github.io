@@ -107,3 +107,14 @@ deploy:
   repo: git@github.com:SignorinoY/signorinoy.github.io.git
   branch: 'gh-pages'
 
+## Plugins: hexo-renderer-pandoc
+## Docs: https://github.com/hexojs/hexo-renderer-pandoc
+pandoc:
+  extra:
+    - filter: pandoc-crossref
+    - csl: "apa.csl"
+    - bibliography: "references.bib"
+    - citeproc:
+  meta:
+    - link-citations: true
+    - reference-section-title: "References"
