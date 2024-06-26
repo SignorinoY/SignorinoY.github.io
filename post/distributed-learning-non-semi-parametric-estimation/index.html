@@ -29,7 +29,7 @@
 <meta property="og:description" content="This article provides a comprehensive review of distributed learning methods for nonparametric and semiparametric estimation.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-31T01:38:09.000Z">
-<meta property="article:modified_time" content="2024-05-31T04:52:49.613Z">
+<meta property="article:modified_time" content="2024-05-31T06:18:48.997Z">
 <meta property="article:author" content="Gong Ziyang">
 <meta property="article:tag" content="Statistics">
 <meta name="twitter:card" content="summary">
@@ -165,7 +165,7 @@ Methods</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -230,7 +230,7 @@ Methods</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2024-05-31 09:38:09 / Modified: 12:52:49" itemprop="dateCreated datePublished" datetime="2024-05-31T09:38:09+08:00">2024-05-31</time>
+      <time title="Created: 2024-05-31 09:38:09 / Modified: 14:18:48" itemprop="dateCreated datePublished" datetime="2024-05-31T09:38:09+08:00">2024-05-31</time>
     </span>
 
   
@@ -266,8 +266,10 @@ ridge regression estimators.</li>
 role="doc-biblioref">2016</a>)</span></li>
 <li><span class="citation" data-cites="lian2019projected">Lian et al.
 (<a href="#ref-lian2019projected" role="doc-biblioref">2019</a>)</span>
-(B-spline), <span class="citation" data-cites="lv2022debiased">Lv &amp;
-Lian (<a href="#ref-lv2022debiased"
+(B-spline), <span class="citation" data-cites="wang2021distributed">Wang
+et al. (<a href="#ref-wang2021distributed"
+role="doc-biblioref">2021</a>)</span> (B-spline), <span class="citation"
+data-cites="lv2022debiased">Lv &amp; Lian (<a href="#ref-lv2022debiased"
 role="doc-biblioref">2022</a>)</span> (RKHS)</li>
 <li><span class="citation" data-cites="chen2022distributed">Chen et al.
 (<a href="#ref-chen2022distributed"
@@ -277,6 +279,18 @@ semi-parametric binary response models.</li>
 </ul>
 <h1 id="communication-efficient-methods">Communication-Efficient
 Methods</h1>
+<ul>
+<li><span class="citation" data-cites="gao2023communicationa">Gao &amp;
+Wang (<a href="#ref-gao2023communicationa"
+role="doc-biblioref">2023</a>)</span> consider the partially linear
+model and propose a communication-efficient method based on the local
+polynomial regression.</li>
+<li><span class="citation" data-cites="chen2022distributed">Chen et al.
+(<a href="#ref-chen2022distributed"
+role="doc-biblioref">2022</a>)</span> also consider the
+communication-efficient distributed estimation of the partially linear
+model using the SMSE.</li>
+</ul>
 <h1 class="unnumbered" id="bibliography">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent"
 data-entry-spacing="0" data-line-spacing="2" role="list">
@@ -285,6 +299,12 @@ Chen, X., Jing, W., Liu, W., &amp; Zhang, Y. (2022). <em>Distributed
 estimation and inference for semi-parametric binary response models</em>
 (arXiv:2210.08393). arXiv. <a
 target="_blank" rel="noopener" href="https://arxiv.org/abs/2210.08393">https://arxiv.org/abs/2210.08393</a>
+</div>
+<div id="ref-gao2023communicationa" class="csl-entry" role="listitem">
+Gao, J., &amp; Wang, L. (2023). Communication-efficient distributed
+estimation of partially linear additive models for large-scale data.
+<em>Information Sciences</em>, <em>631</em>, 185–201. <a
+target="_blank" rel="noopener" href="https://doi.org/10.1016/j.ins.2023.02.065">https://doi.org/10.1016/j.ins.2023.02.065</a>
 </div>
 <div id="ref-lian2019projected" class="csl-entry" role="listitem">
 Lian, H., Zhao, K., &amp; Lv, S. (2019). Projected spline estimation of
@@ -302,6 +322,13 @@ Research</em>, <em>18</em>(92), 1–31.
 Lv, S., &amp; Lian, H. (2022). Debiased distributed learning for sparse
 partial linear models in high dimensions. <em>Journal of Machine
 Learning Research</em>, <em>23</em>(2), 1–32.
+</div>
+<div id="ref-wang2021distributed" class="csl-entry" role="listitem">
+Wang, Y., Zhang, W., &amp; Lian, H. (2021). Distributed partially linear
+additive models with a high dimensional linear part. <em>IEEE
+Transactions on Signal and Information Processing over Networks</em>,
+<em>7</em>, 611–625. <a
+target="_blank" rel="noopener" href="https://doi.org/10.1109/TSIPN.2021.3111555">https://doi.org/10.1109/TSIPN.2021.3111555</a>
 </div>
 <div id="ref-zhang2015divide" class="csl-entry" role="listitem">
 Zhang, Y., Duchi, J., &amp; Wainwright, M. (2015). Divide and conquer
@@ -346,11 +373,14 @@ target="_blank" rel="noopener" href="https://doi.org/10.1214/15-AOS1410">https:/
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/post/kolmogorov-arnold-networks/" rel="prev" title="Discussion of "KAN kolmogorov-arnold-networks"">
-                  <i class="fa fa-angle-left"></i> Discussion of "KAN kolmogorov-arnold-networks"
+                <a href="/post/cox-proportional-hazards-model/" rel="prev" title="Cox Proportional Hazards Model">
+                  <i class="fa fa-angle-left"></i> Cox Proportional Hazards Model
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/post/bert-pre-training-model-experimental-report/" rel="next" title="实验报告：BERT预训练模型">
+                  实验报告：BERT预训练模型 <i class="fa fa-angle-right"></i>
+                </a>
             </div>
           </div>
     </footer>

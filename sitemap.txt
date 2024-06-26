@@ -1,6 +1,6 @@
-https://gongziyang.com/publications/index.html
+https://gongziyang.com/post/bert-pre-training-model-experimental-report/
 https://gongziyang.com/post/distributed-learning-non-semi-parametric-estimation/
-https://gongziyang.com/post/kolmogorov-arnold-networks/
+https://gongziyang.com/publications/index.html
 https://gongziyang.com/index.html
 https://gongziyang.com/tags/index.html
 https://gongziyang.com/post/cox-proportional-hazards-model/
@@ -8,3 +8,6 @@ https://gongziyang.com/cv/index.html
 https://gongziyang.com/categories/index.html
 https://gongziyang.com/
 https://gongziyang.com/tags/Survival-Analysis/
+https://gongziyang.com/tags/Natural-Language-Processing/
+https://gongziyang.com/tags/Large-Language-Model/
+https://gongziyang.com/tags/BERT/
