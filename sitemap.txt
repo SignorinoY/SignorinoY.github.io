@@ -11,3 +11,6 @@ https://gongziyang.com/tags/Survival-Analysis/
 https://gongziyang.com/tags/Natural-Language-Processing/
 https://gongziyang.com/tags/Large-Language-Model/
 https://gongziyang.com/tags/BERT/
+https://gongziyang.com/tags/Deep-Learning/
+https://gongziyang.com/tags/Convolutional-Neural-Network/
+https://gongziyang.com/tags/Model-Pruning/
